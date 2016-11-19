@@ -16,6 +16,7 @@ namespace WebApp.Models
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
 
+        [Display(Name = "Фамилия")]
         public string LastName { get; set; }
 
         public string FirstMidName { get; set; }
