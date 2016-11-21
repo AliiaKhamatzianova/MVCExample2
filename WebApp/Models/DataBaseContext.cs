@@ -77,7 +77,7 @@ namespace WebApp.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Student>().Property(s => s.LastName).HasMaxLength(30);//Conventions.Remove<PluralizingTableNameConvention>();
+            //modelBuilder.Entity<Student>().Property(s => s.LastName).HasMaxLength(30);//Conventions.Remove<PluralizingTableNameConvention>();
         }
     }
 }

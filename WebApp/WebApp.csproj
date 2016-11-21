@@ -159,6 +159,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Migrations\201611211620086_InitialCreate.cs" />
+    <Compile Include="Migrations\201611211620086_InitialCreate.Designer.cs">
+      <DependentUpon>201611211620086_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611211655107_add_student_newProperty.cs" />
+    <Compile Include="Migrations\201611211655107_add_student_newProperty.Designer.cs">
+      <DependentUpon>201611211655107_add_student_newProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ViewsModel\EnrollmentDateGroup.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -222,6 +232,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611211620086_InitialCreate.resx">
+      <DependentUpon>201611211620086_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611211655107_add_student_newProperty.resx">
+      <DependentUpon>201611211655107_add_student_newProperty.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

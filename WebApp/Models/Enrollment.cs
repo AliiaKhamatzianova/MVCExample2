@@ -22,13 +22,13 @@ namespace WebApp.Models
         public int EnrollmentID { get; set; }
 
         public int CourseID { get; set; }
-        [ForeignKey("CourseID")]
+        //[ForeignKey("CourseID")]
         public virtual Course Course { get; set; }
 
         public int StudentID { get; set; }
-        [ForeignKey("StudentID")]
+        //[ForeignKey("StudentID")]
         public virtual Student Student { get; set; }
-
+        [DisplayFormat(NullDisplayText = "No grade")]
         public Grade? Grade { get; set; }
     }
 }
